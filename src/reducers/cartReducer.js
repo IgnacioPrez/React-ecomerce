@@ -1,5 +1,6 @@
 export const initialState = {
     items:[],
+    total:0
 }
 
 export default function cartReducer(state,action){
@@ -8,12 +9,14 @@ export default function cartReducer(state,action){
     switch (action.type) {
         case 'UPDATE':
             newState = {
-                items:action.payload
+                items:action.payload,
+                total:state.payload
             }
             break;
         case 'CLEAR':
             newState = {
-                items:[]
+                items:[],
+                total:0
             }
             break;
         default:

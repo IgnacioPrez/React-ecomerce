@@ -9,7 +9,7 @@ import { get } from "./api"
 import { authContext } from "./context/Auth"
 import { CartContext } from "./context/Cart"
 import Carrito from "./pages/Carrito"
-
+import Comprar from "./pages/Comprar"
 const App = () => {
   const {setUser} = useContext(authContext)
   const {setItems} =useContext(CartContext)
@@ -40,6 +40,7 @@ const App = () => {
       <Route path='/acceso' element={<Login/>}/>
       <Route path='/crear' element={<SigIn/>}/>
       <Route path='/carrito' element={<Carrito/>}/>
+      <Route path="/comprar" element={<Comprar/>}/>
       <Route path='*' element={<NotFound/>}/>
     </Routes>
     </>

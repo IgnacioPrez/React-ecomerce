@@ -28,7 +28,7 @@ const Navbar = () => {
           Inicio
         </Link>
       </ul>
-      <h1 className="flex items-center text-3xl text-violet-100">
+      <h1 className="sm:flex hidden items-center text-3xl text-violet-100">
         <GrReactjs className="items-center "/>  
       React Ecomerce
         

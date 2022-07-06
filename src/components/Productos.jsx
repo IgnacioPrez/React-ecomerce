@@ -33,7 +33,7 @@ export default function Productos({productos,previousPage,nextPage})  {
   useEffect(()=> {
     setTimeout(()=> {
       setLoading(false)
-    },5000)
+    },3000)
   },[])
 
 
